@@ -5,6 +5,7 @@ import Home from './components/home'; // Adjusted file name
 import Gallery from './components/gallery'; // Adjusted file name
 import EditCrewmate from './components/editCrewmate';
 import Layout from './components/layout';
+import CrewmateDetails from './components/oneInfo';
 import './App.css';
 
 const App = () => {
@@ -15,6 +16,7 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/edit/:id" element={<EditCrewmate />} />
+          <Route path="/crewmate/:id" element={<CrewmateDetails />} />
         </Routes>
       </Layout>
     </div>

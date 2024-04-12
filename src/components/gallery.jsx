@@ -41,20 +41,21 @@ const Gallery = () => {
       <h2>Gallery</h2>
       <div>
         {crewmates.map((crewmate) => (
-          <div
+          <div className='cardInfo'
             key={crewmate.id} 
             style={{ 
-              border: '1px solid gray', 
-              padding: '10px', 
+              border: '1px solid gray',  
               margin: '10px', 
+              alignContent: 'center',
               backgroundImage: `linear-gradient(to bottom, ${crewmate.color}, #fff)`, 
             }}
           >
             <h3>{crewmate.name}</h3>
             <p>Speed: {crewmate.speed} mph</p>
             <p>Color: {crewmate.color}</p>
-            <button onClick={() => handleEdit(crewmate.id)}>Edit</button>
-            <button onClick={() => handleDelete(crewmate.id)}>Delete</button>
+            <Link to={`/crewmate/${crewmate.id}`} className='cardButton'>View</Link>
+            <button className='cardButton' onClick={() => handleEdit(crewmate.id)}>Edit</button>
+            <button className='cardButton' onClick={() => handleDelete(crewmate.id)}>Delete</button>
           </div>
         ))}
       </div>

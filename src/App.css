@@ -51,6 +51,7 @@ h1 {
   .content {
     flex: 1;
     padding: 20px;
+    align-items: center;
   }
   
   /* Header Styles */
@@ -64,13 +65,6 @@ h1 {
     margin: 0;
   }
   
-  /* Footer Styles */
-  .footer {
-    background-color: #222;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-  }
   
   /* Button Styles */
 button {
@@ -82,13 +76,27 @@ button {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
- margin-left: 40px;
+  margin-left: 40px;
   transition-duration: 0.4s;
   cursor: pointer;
 }
 
 button:hover {
   background-color: #45a049; /* Darker Green */
+}
+
+.cardButton {
+  background-color: #f0a610; /* Green */
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  margin-left: 20px;
+  align-content: center;
 }
 
 img {
